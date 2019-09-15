@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>CHAT</title>
+        <meta name="description" content="The HTML5 Herald"/>
+        <link rel="stylesheet" type="text/css" href="../assets/styles/app.css"/>
+        <link rel="shortcut icon" href="#" />
+        <script type="text/javascript" charset="UTF-8" src="../assets/scripts/home.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+        <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    </head>
+    <body>
+      <div id="chatContainer" style="opacity: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <div class="chat">  
+          <div id="scroll" style="height: 100%" data-simplebar>
+            <div id="messages" class="messages-box" >
+              <!-- Here we insert incoming messages -->
+            </div>
+          </div>
+  
+          <div name="publish" class="input-box">
+            <textarea id="input" type="text" name="message" class="message-input" placeholder="Type message..."></textarea>
+            <button id="myBtn" type="submit" class="message-submit">Send</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="userNameForm">
+        <h3 style="color: aliceblue; margin-bottom: 40px">Enter Your name to start chat</h3>
+        <input id="userName" type="text" placeholder="Enter Your Name">
+        <button id="submitName" type="submit" >Submit</button>
+      </div>
+
+      <div class="bg"></div>
+
+    </body>
+</html>
+
+
